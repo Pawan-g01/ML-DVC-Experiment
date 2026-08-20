@@ -23,8 +23,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Random Forest Model - Version 1
 model = RandomForestClassifier(
-    n_estimators=100,
-    max_depth=5,
+    n_estimators=200,
+    max_depth=10,
     random_state=42
 )
 
@@ -41,6 +41,6 @@ print("Random Forest Model trained successfully!")
 print("Accuracy:", accuracy)
 
 # Save model
-joblib.dump(model, "../models/random_forest_v1.pkl")
+joblib.dump(model, "../models/random_forest_v2.pkl")
 
-print("Model saved as models/random_forest_v1.pkl")
+print("Model saved as models/random_forest_v2.pkl")
